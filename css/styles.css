@@ -152,3 +152,36 @@ section article.certifications a {
   font-size: 0.8rem;
   color: var(--secondary);
 }
+
+
+@media(max-width: 768px) {
+  .container-body {
+    display: block;
+  }
+}
+
+@media(max-width: 560px) {
+  .container-cv {
+    margin: 0 auto;
+  }
+
+  header {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .header-info {
+    width: 100%;
+  }
+
+  .header-photo {
+    width: 50%;
+    text-align: center;
+    margin: 1rem 0;
+  }
+
+  .header-info h1 {
+    font-size: 2rem;
+  }
+}
