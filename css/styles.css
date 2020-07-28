@@ -1,0 +1,153 @@
+:root {
+  --primary: #fca311;
+  --secondary: #14213d;
+  --font-body: #263547;
+}
+
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  color: var(--font-body);
+  background-color: #f5f5f5;
+}
+
+.container-cv {
+  max-width: 700px;
+  margin: 1rem auto;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14),
+    0 3px 1px -2px rgba(0, 0, 0, 0.12), 0 1px 5px 0 rgba(0, 0, 0, 0.2);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  background-color: var(--primary);
+  padding: 1rem 0;
+  font-family: 'Montserrat', sans-serif;
+  line-height: 0.97;
+}
+
+.header-info {
+  width: 40%;
+  margin-left: 1rem;
+}
+
+.header-info h1 {
+  font-weight: 500;
+  font-size: 3rem;
+  color: #ffffff;
+}
+
+.header-info h2 {
+  margin-top: 1rem;
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--font-body);
+}
+
+.header-photo {
+  width: 40%;
+  text-align: right;
+  margin-right: 2rem;
+}
+
+.header-photo img {
+  width: 60%;
+  border-radius: 50%;
+}
+
+.container-body {
+  display: flex;
+}
+
+.container-body aside {
+  padding: 1rem 1rem;
+  background: var(--secondary);
+}
+
+.container-body aside p {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.container-body aside p i {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  color: var(--primary);
+}
+
+.container-body aside p span,
+.container-body aside p a {
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+
+.container-body main {
+  background: #ffffff;
+}
+
+.container-body main section article {
+  padding: 1rem;
+}
+
+.container-body main section article h3 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 1rem;
+  text-transform: uppercase;
+  margin-bottom: 0.5rem;
+  letter-spacing: 2px;
+}
+
+.container-body main section article p,
+.container-body main section article span {
+  font-size: 0.8rem;
+}
+
+.divider {
+  height: 3px;
+  background: var(--primary);
+  margin-left: 1rem;
+}
+
+section article.skills {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+section article.skills h3 {
+  width: 100%;
+}
+
+section article.skills div:last-child {
+  margin-left: 2rem;
+}
+
+section article ul li {
+  font-size: 0.8rem;
+}
+
+section article h4 {
+  font-size: 0.9rem;
+}
+
+section article.education div,
+section article.languages div {
+  margin-bottom: 0.5rem;
+}
+
+section article.certifications {
+  display: flex;
+  flex-direction: column;
+}
+
+section article.certifications a {
+  font-size: 0.8rem;
+  color: var(--secondary);
+}
